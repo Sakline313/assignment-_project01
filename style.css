@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
+body {
+  background-color: #f5f7ff;
+}
 
 header {
   background-image: url("B12A01-landing-launchpad/Assets/Hero-bg.png");
@@ -98,15 +101,33 @@ nav {
   font-size: 40px;
 }
 .divAction button {
-  background-color: rgb(11, 30, 202);
-  padding: 8px 10px;
+  background: linear-gradient(45deg, #0b1eca, #3a67f2);
+  padding: 10px 20px;
   border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+
+.divAction button:hover {
+  background: linear-gradient(45deg, #1f51ff, #0dffb7);
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
 .divAction button a {
   color: azure;
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
+  font-weight: bold;
 }
+
+
+.divAction button:hover a {
+  color: #fff;
+}
+
 /* Productive Users */
 main {
   max-width: 1430px;
@@ -330,6 +351,19 @@ h2 {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #e7eaf8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
 footer h1 {
   color: #4f46e5;
   font-size: 2rem;
@@ -359,7 +393,4 @@ footer nav a {
   .contact-title {
     font-size: 2rem;
   }
-}
-body {
-  background-color: #f5f7ff;
 }
